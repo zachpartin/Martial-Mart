@@ -26,6 +26,8 @@ Martial-Mart is a full-stack app that allows users to buy and sell martial arts 
 
 #### Wireframes
 
+https://www.figma.com/file/qvzTtvAJxLEyNtu4kOVxyR/Martial-Mart?node-id=0%3A1
+
 ![Home Page](assets/Home-page.png)
 ![Products](assets/Products.png)
 ![Product Detail](assets/Product-Detail.png)
@@ -33,10 +35,13 @@ Martial-Mart is a full-stack app that allows users to buy and sell martial arts 
 ![Sign-In](assets/Sign-In.png)
 ![Sign-up](assets/Sign-Up.png)
 ![ProductCreate](assets/Add-Product.png)
+![Mobile](assets/Mobile.png)
 
 #### Component Tree
 
-![Component Tree](assets/component-tree.png)
+![Component Tree](assets/component-tree-new.png)
+
+https://whimsical.com/martial-mart-M9m6N3GgTWUYGFwDcRLntd
 
 #### Component Architecture
 
@@ -91,9 +96,11 @@ src
 #### ERD Model
 
 ![ERD](assets/ERD.png)
+
 https://app.diagrams.net/#G1_OyP7GdOPuKXK15jClAhox_TlebAi2ng
 
 ## Post-MVP
 
+- Hamburger Menu for mobile
 - Add CSS animations
 - Carousel for homepage
