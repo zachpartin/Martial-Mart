@@ -36,6 +36,7 @@ Martial-Mart is a full-stack app that allows users to buy and sell martial arts 
 
 #### Component Architecture
 
+``` structure
 src
 |_ screens/
       |_ Homepage.jsx
@@ -55,7 +56,7 @@ src
       |_ ProductDetail.jsx
       |_ Product.jsx
       |_ ShoppingCart.jsx
-
+```
 
 
 #### Time Estimates
