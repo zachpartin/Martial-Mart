@@ -102,5 +102,6 @@ https://app.diagrams.net/#G1_OyP7GdOPuKXK15jClAhox_TlebAi2ng
 ## Post-MVP
 
 - Hamburger Menu for mobile
+- Shopping Cart
 - Add CSS animations
 - Carousel for homepage
