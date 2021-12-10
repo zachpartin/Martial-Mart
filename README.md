@@ -1,9 +1,14 @@
 # Martial-Mart
 
+## MVP
 
-## Client (Front End)
+### Goals
 
-### Wireframes
+### Libraries and Dependcies
+
+### Client (Front End)
+
+#### Wireframes
 ![Home Page](assets/Home-page.png)
 ![Products](assets/Products.png)
 ![Product Detail](assets/Product-Detail.png)
@@ -13,15 +18,18 @@
 ![ProductCreate](assets/Add-Product.png)
 
 
-### Component Tree
+#### Component Tree
 ![Component Tree](assets/component-tree.png)
 
-### Component Architecture
+#### Component Architecture
 
-### Time Estimates
+#### Time Estimates
 
 
 
-## Server (Back End)
+### Server (Back End)
 
-### ERD Model
+#### ERD Model
+
+## Post-MVP
+
