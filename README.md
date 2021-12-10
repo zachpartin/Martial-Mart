@@ -7,9 +7,9 @@ Martial-Mart is a full-stack app that allows users to buy and sell martial arts 
 
 ### Goals
 
-- _Include authentication, allow any user to browse selection, but only add or edit products when signed in
-- _Full CRUD on products for users
-- 
+- Include authentication, allow any user to browse selection, but only add or edit products when signed in
+- Full CRUD on products for users
+- 8 React components
 
 ### Libraries and Dependcies
 |     Library      | Description                                |
@@ -35,6 +35,28 @@ Martial-Mart is a full-stack app that allows users to buy and sell martial arts 
 ![Component Tree](assets/component-tree.png)
 
 #### Component Architecture
+
+src
+|_ screens/
+      |_ Homepage.jsx
+      |_ Products.jsx
+      |_ ProductDetail.jsx
+      |_ SignIn.jsx
+      |_ SignUp.jsx
+      |_ ProductCreate.jsx
+      |_ ShoppingCart.jsx
+|_ components/
+      |_ ItemContainer.jsx
+      |_ Layout.jsx
+      |_ Header.jsx
+      |_ Nav.jsx
+      |_ Footer.jsx
+      |_ Products.jsx
+      |_ ProductDetail.jsx
+      |_ Product.jsx
+      |_ ShoppingCart.jsx
+
+
 
 #### Time Estimates
 
