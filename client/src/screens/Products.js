@@ -1,12 +1,18 @@
-
+import { Link } from 'react-router-dom';
 
 const Products = ({products}) => {
   
   return (
-    <div>
+    <div className="products">
       <h1>For Sale</h1>
       {products.map((product) => (
-       <h1>{product.name}</h1>
+        <div className="product">
+          <Link to={`products/${product.id}`}>
+            <img src={product.img_url} />
+            <h4>{product.name}</h4>
+            <h4>{product.price}</h4>
+          </Link>
+        </div>
       ))}
     </div>
   )

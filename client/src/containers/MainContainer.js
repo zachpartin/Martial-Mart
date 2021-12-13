@@ -1,6 +1,7 @@
 import { Route, Switch } from 'react-router-dom'
 import Homepage from '../screens/Homepage.js'
 import Products from '../screens/Products.js'
+import ProductDetail from '../screens/ProductDetail.js'
 import { useState, useEffect } from 'react';
 import { getAllProducts } from '../services/product.js';
 
@@ -21,13 +22,16 @@ const MainContainer = () => {
   return (
     <div>
       <Switch>
-        <Route path='/'>
-          <Homepage />
+        <Route path='/products/:id'>
+          <ProductDetail />
         </Route>
         <Route path='/products'>
           <Products
           products={products}
           />
+        </Route>
+        <Route path='/'>
+          <Homepage />
         </Route>
       </Switch>
     </div>
