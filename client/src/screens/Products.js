@@ -8,9 +8,9 @@ const Products = ({products}) => {
       {products.map((product) => (
         <div className="product">
           <Link to={`products/${product.id}`}>
-            <img src={product.img_url} />
+            <img src={product.img_url} alt="product"/>
             <h4>{product.name}</h4>
-            <h4>{product.price}</h4>
+            <h4>${product.price}</h4>
           </Link>
         </div>
       ))}

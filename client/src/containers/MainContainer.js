@@ -1,15 +1,15 @@
-import { Route, Switch } from 'react-router-dom'
-import Homepage from '../screens/Homepage.js'
-import Products from '../screens/Products.js'
-import ProductDetail from '../screens/ProductDetail.js'
+import { Route, Switch } from 'react-router-dom';
+import Homepage from '../screens/Homepage.js';
+import Products from '../screens/Products.js';
+import ProductDetail from '../screens/ProductDetail.js';
 import { useState, useEffect } from 'react';
 import { getAllProducts } from '../services/product.js';
 
 
 const MainContainer = () => {
-  const [products, setProducts] = useState([])
-  
+  const [products, setProducts] = useState([]);
 
+  
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -19,11 +19,16 @@ const MainContainer = () => {
     fetchProducts();
   }, [])
 
+
+ 
+
   return (
     <div>
       <Switch>
         <Route path='/products/:id'>
-          <ProductDetail />
+          <ProductDetail
+          products={products}
+          />
         </Route>
         <Route path='/products'>
           <Products
