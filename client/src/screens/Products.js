@@ -6,7 +6,7 @@ const Products = ({products}) => {
     <div>
       <h1>For Sale</h1>
       {products.map((product) => (
-        {product}
+       <h1>{product.name}</h1>
       ))}
     </div>
   )
