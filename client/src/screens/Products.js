@@ -1,11 +1,14 @@
 
 
-const Products = () => {
+const Products = ({products}) => {
   
-  
-  
-  return(
-    <h1>For Sale</h1>
+  return (
+    <div>
+      <h1>For Sale</h1>
+      {products.map((product) => (
+        {product}
+      ))}
+    </div>
   )
 }
 
