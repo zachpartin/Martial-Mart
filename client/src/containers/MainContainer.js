@@ -31,7 +31,7 @@ const MainContainer = ({currentUser}) => {
     setProducts((prevState) => prevState.filter((product) => product.id !== id))
   }
 
- 
+
 
   return (
     <div>
@@ -41,14 +41,12 @@ const MainContainer = ({currentUser}) => {
           handleProductUpdate={handleProductUpdate}
           />
         </Route>
-        
         <Route path='/products/:id'>
           <ProductDetail
             currentUser={currentUser}
             handleProductDelete={handleProductDelete}
           />
         </Route>
-        
         <Route path='/products'>
           <Products
           products={products}
