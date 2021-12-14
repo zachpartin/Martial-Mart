@@ -2,7 +2,7 @@ import { getOneProduct } from "../services/product";
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
-const ProductDetail = ({ currentUser }) => {
+const ProductDetail = ({ currentUser, handleProductDelete }) => {
   const [product, setProduct] = useState([]);
   const { id } = useParams();
 
@@ -21,10 +21,14 @@ const ProductDetail = ({ currentUser }) => {
       <h4>{product.price}</h4>
       <p>"{product.description}"</p>
       {currentUser ? (
+        <div className="userButtons">
         <Link to={`/product/${product.id}/edit`}>
           <button>Edit</button>
-        </Link>
+          </Link>
+          <button onClick={handleProductDelete(product.id)}>Delete</button>
+          </div>
       ) : (null)}
+          
     </div>
   );
 };
