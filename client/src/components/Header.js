@@ -12,17 +12,20 @@ const Header = ({handleLogout, currentUser}) => {
         <nav>
           <Link to='/products'>For Sale</Link>
           <Link to='/about'>About</Link>
+          <button onClick={handleLogout}>Sign Out</button>
         </nav>
 
       )
-      
-    }
-      <nav>
-      <Link to='/products'>For Sale</Link>
-      <Link to='/about'>About</Link>
-      <Link to='/sign-in'>Sign In</Link>
-    </nav>
-      
+        :
+    
+       (<nav>
+          <Link to='/products'>For Sale</Link>
+          <Link to='/about'>About</Link>
+          <Link to='/sign-in'>
+            <button>Sign In</button>
+          </Link>
+        </nav>)
+      }
   </header>
   )
 }

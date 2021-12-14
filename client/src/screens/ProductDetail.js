@@ -1,8 +1,8 @@
 import { getOneProduct } from "../services/product";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
-const ProductDetail = ({ products }) => {
+const ProductDetail = ({ products, currentUser }) => {
   const [product, setProduct] = useState([]);
   const { id } = useParams();
 
@@ -20,7 +20,11 @@ const ProductDetail = ({ products }) => {
       <h4>{product.name}</h4>
       <h4>{product.price}</h4>
       <p>"{product.description}"</p>
-      
+      {currentUser ? (
+        <Link to={`/product/${product.id}/edit`}>
+          <button>Edit</button>
+        </Link>
+      ) : (null)}
     </div>
   );
 };
