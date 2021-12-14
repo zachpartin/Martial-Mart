@@ -1,4 +1,3 @@
-import Nav from './Nav.js'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -8,7 +7,13 @@ const Header = () => {
       <Link to='/'>
         <h1>Martial Mart</h1>
       </Link>
-      <Nav />
+
+      <nav>
+      <Link to='/products'>For Sale</Link>
+      <Link to='/sign-in'>Sign In</Link>
+      <Link to='/about'>About</Link>
+    </nav>
+      
   </header>
   )
 }

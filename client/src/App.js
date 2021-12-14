@@ -47,7 +47,10 @@ function App() {
 
   return (
     <div className="App">
-      <Layout>
+      <Layout
+        currentUser={currentUser}
+        handleLogout={handleLogout}
+      >
         <Switch>
           <Route path='/sign-in'>
             <SignIn
