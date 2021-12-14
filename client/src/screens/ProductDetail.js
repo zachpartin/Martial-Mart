@@ -2,7 +2,7 @@ import { getOneProduct } from "../services/product";
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
-const ProductDetail = ({ products, currentUser }) => {
+const ProductDetail = ({ currentUser }) => {
   const [product, setProduct] = useState([]);
   const { id } = useParams();
 

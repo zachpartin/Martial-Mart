@@ -2,11 +2,12 @@ import { Route, Switch } from 'react-router-dom';
 import Homepage from '../screens/Homepage.js';
 import Products from '../screens/Products.js';
 import ProductDetail from '../screens/ProductDetail.js';
+import ProductEdit from '../screens/ProductEdit';
 import { useState, useEffect } from 'react';
-import { getAllProducts } from '../services/product.js';
+import { getAllProducts,  } from '../services/product.js';
 
 
-const MainContainer = () => {
+const MainContainer = ({currentUser}) => {
   const [products, setProducts] = useState([]);
 
   
@@ -19,15 +20,24 @@ const MainContainer = () => {
     fetchProducts();
   }, [])
 
+  const handleProductUpdate = async (id, formData) => {
+    const newProduct = await putProduct(id, formData);
+    setProducts((prevState) => [...prevState, newProduct]);
+    history.push('/products');
+  };
+
 
  
 
   return (
     <div>
       <Switch>
+        <Route path='/products/:id/edit'>
+          <ProductEdit />
+        </Route>
         <Route path='/products/:id'>
           <ProductDetail
-          products={products}
+            currentUser={currentUser}
           />
         </Route>
         <Route path='/products'>
