@@ -50,10 +50,14 @@ function App() {
       <Layout>
         <Switch>
           <Route path='/sign-in'>
-            <SignIn />
+            <SignIn
+            handleLogin={handleLogin}
+            />
           </Route>
           <Route path='/sign-up'>
-            <SignUp />
+            <SignUp
+            handleRegister={handleRegister}
+            />
           </Route>
           <Route path='/'>
           <MainContainer
