@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = ({handleLogout, currentUser}) => {
 
   return (
     <header className="header">
       <Link to='/'>
-        <h1>Martial Mart</h1>
+        <h1 className="title">Martial Mart</h1>
       </Link>
 
       {currentUser ? (
