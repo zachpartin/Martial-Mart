@@ -27,7 +27,9 @@ const ProductDetail = ({ currentUser, handleProductDelete }) => {
           </Link>
           <button onClick={handleProductDelete(product.id)}>Delete</button>
           </div>
-      ) : (null)}
+      ) : (
+          <></>
+      )}
           
     </div>
   );

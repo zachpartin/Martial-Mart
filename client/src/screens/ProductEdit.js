@@ -1,10 +1,63 @@
+import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
+const ProductEdit = ({ handleProductUpdate, products }) => {
+  const [formData, setFormData] =
+    useState({
+      name: '',
+      price: '',
+      img_url: '',
+      description: '',
+    });
+  const { name, price, img_url, description } = formData;
+  const { id } = useParams();
 
-const ProductEdit = ({ handleProductUpdate }) => {
-  
+  // useEffect(() => {
+  //   const prefillFormData = () => {
+  //     const product = products.find((product) => product.id === Number(id));
+  //     setFormData({ name: product.name,   });
+  //   };
+  //   if (foods.length) prefillFormData();
+  // }, [foods, id]);
+
+  const handleChange = (e) => {
+    const { name, price, description, img_url, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+      [price]: value,
+      [description]: value,
+      [img_url]: value,
+    }));
+  };
+
   return (
 <div>
-  <h1>Edit</h1>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleProductUpdate(id, formData);
+      }}
+      >
+    <h1>Edit Product</h1>
+        <label>
+          Name:
+          <input type='text' name='name' value={name} onChange={handleChange}/>
+        </label>
+        <label>
+          Price:
+          <input type='text' name='price' value={price} onChange={handleChange}/>
+        </label>
+        <label>
+          Image URL:
+          <input type='text' name='img_url' value={img_url} onChange={handleChange} />
+        </label>
+        <label>
+          Description:
+          <input type='text' name='description' value={description} onChange={handleChange} />
+        </label>
+        <button>Submit</button>
+  </form>
 </div>
   )
 }

@@ -38,13 +38,15 @@ const MainContainer = ({currentUser}) => {
       <Switch>
       <Route path='/products/:id/edit'>
           <ProductEdit
-          handleProductUpdate={handleProductUpdate}
+            handleProductUpdate={handleProductUpdate}
+            products={products}
           />
         </Route>
         <Route path='/products/:id'>
           <ProductDetail
             currentUser={currentUser}
             handleProductDelete={handleProductDelete}
+            products={products}
           />
         </Route>
         <Route path='/products'>
