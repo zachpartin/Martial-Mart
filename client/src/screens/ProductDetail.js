@@ -25,7 +25,7 @@ const ProductDetail = ({ currentUser, handleProductDelete }) => {
         <Link to={`/product/${product.id}/edit`}>
           <button>Edit</button>
           </Link>
-          <button onClick={handleProductDelete(product.id)}>Delete</button>
+          <button onClick={() => handleProductDelete(product.id)}>Delete</button>
           </div>
       ) : (
           <></>
