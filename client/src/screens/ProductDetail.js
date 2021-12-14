@@ -22,7 +22,7 @@ const ProductDetail = ({ currentUser, handleProductDelete }) => {
       <p>"{product.description}"</p>
       {currentUser ? (
         <div className="userButtons">
-        <Link to={`/product/${product.id}/edit`}>
+        <Link to={`/products/${product.id}/edit`}>
           <button>Edit</button>
           </Link>
           <button onClick={() => handleProductDelete(product.id)}>Delete</button>

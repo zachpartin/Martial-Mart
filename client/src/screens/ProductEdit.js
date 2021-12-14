@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 const ProductEdit = ({ handleProductUpdate, products }) => {
@@ -12,13 +12,13 @@ const ProductEdit = ({ handleProductUpdate, products }) => {
   const { name, price, img_url, description } = formData;
   const { id } = useParams();
 
-  // useEffect(() => {
-  //   const prefillFormData = () => {
-  //     const product = products.find((product) => product.id === Number(id));
-  //     setFormData({ name: product.name,   });
-  //   };
-  //   if (foods.length) prefillFormData();
-  // }, [foods, id]);
+  useEffect(() => {
+    const prefillFormData = () => {
+      const product = products.find((product) => product.id === Number(id));
+      setFormData({ name: product.name, price: product.price, img_url: product.img_url, description: product.description  });
+    };
+    if (products.length) prefillFormData();
+  }, [products, id]);
 
   const handleChange = (e) => {
     const { name, price, description, img_url, value } = e.target;

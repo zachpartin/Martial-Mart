@@ -3,8 +3,9 @@ import Homepage from '../screens/Homepage.js';
 import Products from '../screens/Products.js';
 import ProductDetail from '../screens/ProductDetail.js';
 import ProductEdit from '../screens/ProductEdit';
+import ProductCreate from '../screens/ProductCreate'
 import { useState, useEffect } from 'react';
-import { deleteProduct, getAllProducts, putProduct } from '../services/product.js';
+import { deleteProduct, getAllProducts, postProduct, putProduct } from '../services/product.js';
 
 
 const MainContainer = ({currentUser}) => {
@@ -31,6 +32,11 @@ const MainContainer = ({currentUser}) => {
     setProducts((prevState) => prevState.filter((product) => product.id !== id))
   }
 
+  const handleProductCreate = async (formData) => {
+    const newProduct = await postProduct(formData);
+    setProducts((prevState) => [...prevState, newProduct]);
+    history.push('/products');
+  };
 
 
   return (
@@ -40,6 +46,11 @@ const MainContainer = ({currentUser}) => {
           <ProductEdit
             handleProductUpdate={handleProductUpdate}
             products={products}
+          />
+        </Route>
+        <Route path='/products/new' >
+          <ProductCreate
+          handleProductCreate={handleProductCreate}
           />
         </Route>
         <Route path='/products/:id'>
