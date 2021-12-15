@@ -16,7 +16,12 @@ text-decoration: none;
 /* font-family: ; */
 }
 
+.headerLinks {
+  color: white;
+}
+
 .nav {
+  display: flex;
   position: absolute;
   right: 0;
   justify-content: flex-start;
@@ -24,5 +29,5 @@ text-decoration: none;
 
 .title {
   font-family: 'Trade Winds', cursive;
-  
+  color: white;
 }

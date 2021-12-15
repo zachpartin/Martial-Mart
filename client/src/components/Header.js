@@ -11,8 +11,8 @@ const Header = ({handleLogout, currentUser}) => {
 
       {currentUser ? (
         <nav className="nav">
-          <Link to='/products'>For Sale</Link>
-          <Link to='/about'>About</Link>
+          <Link to='/products' className="headerLinks">For Sale</Link>
+          <Link to='/about' className="headerLinks">About</Link>
           <button onClick={handleLogout}>Sign Out</button>
         </nav>
 
@@ -20,8 +20,8 @@ const Header = ({handleLogout, currentUser}) => {
         :
     
        (<nav className="nav">
-          <Link to='/products'>For Sale</Link>
-          <Link to='/about'>About</Link>
+          <Link to='/products' className="headerLinks">For Sale</Link>
+          <Link to='/about' className="headerLinks">About</Link>
           <Link to='/sign-in'>
             <button>Sign In</button>
           </Link>
