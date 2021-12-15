@@ -1,0 +1,8 @@
+.editForm {
+  display:flex;
+  flex-direction: column;
+}
+
+.editInputs {
+  margin: 10px;
+}
