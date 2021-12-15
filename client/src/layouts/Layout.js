@@ -6,7 +6,7 @@ export default function Layout({children, handleLogout, currentUser}) {
 
 
   return (
-    <div>
+    <div className="layout">
       <Header
         handleLogout={handleLogout}
         currentUser={currentUser}

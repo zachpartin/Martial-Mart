@@ -33,7 +33,7 @@ const ProductEdit = ({ handleProductUpdate, products }) => {
   };
 
   return (
-    <div>
+    <div className="editPage">
       <form
         onSubmit={(e) => {
           e.preventDefault();
