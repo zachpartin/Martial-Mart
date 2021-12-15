@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './ProductCreate.css';
 
 const ProductCreate = ({ handleProductCreate }) => {
   const [formData, setFormData] = useState({
@@ -27,11 +28,11 @@ const ProductCreate = ({ handleProductCreate }) => {
           e.preventDefault();
           handleProductCreate(formData);
         }}
-      >
+      className="createForm">
         <h1>Add Product</h1>
         <label>
           Name:
-          <input type="text" name="name" value={name} onChange={handleChange} />
+          <input type="text" name="name" value={name} onChange={handleChange} className="createInputs"/>
         </label>
         <label>
           Price:
@@ -40,7 +41,7 @@ const ProductCreate = ({ handleProductCreate }) => {
             name="price"
             value={price}
             onChange={handleChange}
-          />
+            className="createInputs"/>
         </label>
         <label>
           Image URL:
@@ -49,7 +50,7 @@ const ProductCreate = ({ handleProductCreate }) => {
             name="img_url"
             value={img_url}
             onChange={handleChange}
-          />
+            className="createInputs"/>
         </label>
         <label>
           Description:
@@ -58,9 +59,9 @@ const ProductCreate = ({ handleProductCreate }) => {
             name="description"
             value={description}
             onChange={handleChange}
-          />
+            className="createInputs"/>
         </label>
-        <button>Submit</button>
+        <button className="createSubmit">Submit</button>
       </form>
     </div>
   );
