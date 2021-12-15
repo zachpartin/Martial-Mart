@@ -4,12 +4,12 @@ import './Products.css';
 const Products = ({products}) => {
   
   return (
-    <div className="products">
+    <div className="productsPage">
       <h1 className="forSale">For Sale</h1>
       <Link to='/products/new'>
       <button className="addButton">Add Product</button>
       </Link>
-      {/* <div className="product"> */}
+      <div className="products">
       {products.map((product) => (
         <div className="product">
           <Link to={`products/${product.id}`}>
@@ -19,7 +19,7 @@ const Products = ({products}) => {
           </Link>
          </div>
       ))}
-        {/* </div> */}
+        </div>
     </div>
   )
 }
