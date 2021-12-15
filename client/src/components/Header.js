@@ -13,7 +13,7 @@ const Header = ({handleLogout, currentUser}) => {
         <nav className="nav">
           <Link to='/products' className="headerLinks">For Sale</Link>
           <Link to='/about' className="headerLinks">About</Link>
-          <button onClick={handleLogout}>Sign Out</button>
+          <Link to="/" onClick={handleLogout} className="headerLinks">Sign Out</Link>
         </nav>
 
       )
@@ -22,9 +22,7 @@ const Header = ({handleLogout, currentUser}) => {
        (<nav className="nav">
           <Link to='/products' className="headerLinks">For Sale</Link>
           <Link to='/about' className="headerLinks">About</Link>
-          <Link to='/sign-in'>
-            <button>Sign In</button>
-          </Link>
+          <Link to='/sign-in' className="headerLinks">Sign In</Link>
         </nav>)
       }
   </header>

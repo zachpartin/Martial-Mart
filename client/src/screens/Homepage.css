@@ -4,3 +4,13 @@
   font-family: 'Bebas Neue', cursive;
 
 }
+
+.homepageStatement {
+  font-size: 30px;
+}
+
+.homepageImg {
+  width: 100vw;
+  height: auto;
+  max-height: 500px;
+}
