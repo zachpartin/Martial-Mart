@@ -1,8 +1,10 @@
+import './Footer.css';
+
 const Footer = () => {
 
   return (
-    <div>
-      <h5>Footer Here</h5>
+    <div className="footer">
+      <img src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png" alt="github" className="github"/>
     </div>
   )
 }
