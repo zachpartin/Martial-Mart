@@ -15,10 +15,10 @@ const ProductDetail = ({ currentUser, handleProductDelete }) => {
   }, [id]);
 
   return (
-    <div>
+    <div className="productDetail">
       <img src={product.img_url} alt="Product"/>
       <h4>{product.name}</h4>
-      <h4>{product.price}</h4>
+      <h4>${product.price}</h4>
       <p>"{product.description}"</p>
       {currentUser ? (
         <div className="userButtons">
