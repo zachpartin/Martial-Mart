@@ -18,14 +18,18 @@ text-decoration: none;
 
 .headerLinks {
   color: white;
+  margin: 5px;
 }
 
 .nav {
   display: flex;
   position: absolute;
-  right: 0;
+  right: 5px;
+  top: 30px;
   justify-content: flex-start;
+  margin-right: 5px;
 }
+
 
 .title {
   font-family: 'Trade Winds', cursive;
