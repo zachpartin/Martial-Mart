@@ -9,9 +9,9 @@ const Products = ({products}) => {
       <Link to='/products/new'>
       <button>Add Product</button>
       </Link>
-      <div className="product">
+      {/* <div className="product"> */}
       {products.map((product) => (
-        // <div className="product">
+        <div className="product">
           <Link to={`products/${product.id}`}>
             <img src={product.img_url} alt="product" className="productImg"/>
             <h4>{product.name}</h4>
@@ -19,7 +19,7 @@ const Products = ({products}) => {
           </Link>
         // </div>
       ))}
-        </div>
+        {/* </div> */}
     </div>
   )
 }
