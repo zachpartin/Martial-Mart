@@ -1,4 +1,5 @@
 import Picture from '../assets/Homepagepic.png'
+import './Homepage.css';
 
 const Homepage = () => {
 
