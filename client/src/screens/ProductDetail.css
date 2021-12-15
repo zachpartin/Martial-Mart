@@ -1,0 +1,16 @@
+.productDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.productDetailImg {
+  width: 40vw;
+  height: 50vh;
+}
+
+.userButtons {
+  margin: 5px;
+}
