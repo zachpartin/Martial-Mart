@@ -17,7 +17,7 @@ const Products = ({products}) => {
             <h4>{product.name}</h4>
             <h4>${product.price}</h4>
           </Link>
-        // </div>
+         </div>
       ))}
         {/* </div> */}
     </div>
