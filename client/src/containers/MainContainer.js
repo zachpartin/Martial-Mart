@@ -62,7 +62,8 @@ const MainContainer = ({currentUser}) => {
         </Route>
         <Route path='/products'>
           <Products
-          products={products}
+            products={products}
+            currentUser={currentUser}
           />
         </Route>
         <Route path='/'>
