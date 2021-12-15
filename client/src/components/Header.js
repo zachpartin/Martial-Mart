@@ -10,7 +10,7 @@ const Header = ({handleLogout, currentUser}) => {
       </Link>
 
       {currentUser ? (
-        <nav>
+        <nav className="nav">
           <Link to='/products'>For Sale</Link>
           <Link to='/about'>About</Link>
           <button onClick={handleLogout}>Sign Out</button>
@@ -19,7 +19,7 @@ const Header = ({handleLogout, currentUser}) => {
       )
         :
     
-       (<nav>
+       (<nav className="nav">
           <Link to='/products'>For Sale</Link>
           <Link to='/about'>About</Link>
           <Link to='/sign-in'>
