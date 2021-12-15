@@ -7,7 +7,7 @@ const Products = ({products}) => {
     <div className="products">
       <h1 className="forSale">For Sale</h1>
       <Link to='/products/new'>
-      <button>Add Product</button>
+      <button className="addButton">Add Product</button>
       </Link>
       {/* <div className="product"> */}
       {products.map((product) => (

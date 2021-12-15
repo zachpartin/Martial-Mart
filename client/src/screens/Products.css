@@ -15,3 +15,7 @@ font-family: 'Bebas Neue';
 .forSale {
   font-size: 48px;
 }
+
+.addButton {
+  margin-bottom: 20px;
+}
