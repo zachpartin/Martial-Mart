@@ -1,8 +1,14 @@
 .editForm {
   display:flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .editInputs {
+  margin: 10px;
+}
+
+.editSubmit {
   margin: 10px;
 }
