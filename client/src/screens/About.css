@@ -9,3 +9,7 @@ font-family: 'Bebas Neue';
 .about {
   font-family: 'Open Sans', sans-serif;
 }
+
+.aboutPage {
+  margin-bottom: 50px;
+}
