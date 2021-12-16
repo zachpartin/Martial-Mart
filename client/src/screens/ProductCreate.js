@@ -29,7 +29,7 @@ const ProductCreate = ({ handleProductCreate }) => {
           handleProductCreate(formData);
         }}
       className="createForm">
-        <h1>Add Product</h1>
+        <h1 className="createFormTitle">Add Product</h1>
         <label>
           Name:
           <input type="text" name="name" value={name} onChange={handleChange} className="createInputs"/>
