@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IM+Fell+English&family=Trade+Winds&display=swap');
+
 .editForm {
   display:flex;
   flex-direction: column;
@@ -11,4 +13,8 @@
 
 .editSubmit {
   margin: 10px;
+}
+
+.editFormTitle {
+  font-family: 'Bebas Neue';
 }

@@ -40,7 +40,7 @@ const ProductEdit = ({ handleProductUpdate, products }) => {
           handleProductUpdate(id, formData);
       }}
       className="editForm">
-    <h1>Edit Product</h1>
+    <h1 className="editFormTitle">Edit Product</h1>
         <label>
           Name:
           <input type='text' name='name' value={name} onChange={handleChange} className="editInputs"/>
