@@ -6,6 +6,7 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 import { loginUser, registerUser, verifyUser, removeToken } from './services/auth';
 import SignIn from './screens/SignIn.js';
 import SignUp from './screens/SignUp.js';
+import About from './screens/About.js';
 
 
 
@@ -52,6 +53,9 @@ function App() {
         handleLogout={handleLogout}
       >
         <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
           <Route path='/sign-in'>
             <SignIn
             handleLogin={handleLogin}
