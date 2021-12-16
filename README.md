@@ -69,27 +69,24 @@ src
 
 #### Time Estimates
 
-| Task                     | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------------ | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form         |    L     |     3 hrs      |               |             |
-| Create CRUD Actions      |    H     |     3 hrs      |               |             |
-| Endpoints                |    H     |     3 hrs      |               |             |
-| Auth                     |    H     |     3 hrs      |               |             |
-| Seed DB                  |    H     |     2 hrs      |               |             |
-| File structure           |    H     |     1 hrs      |               |             |
-| Set up auth on front end |    H     |     3 hrs      |               |             |
-| Homepage                 |    H     |     2 hrs      |               |             |
-| Products Page            |    H     |     3 hrs      |               |             |
-| Product Details Page     |    H     |     3 hrs      |               |             |
-| Shopping Cart            |    H     |     3 hrs      |               |             |
-| Product Create Page      |    H     |     2 hrs      |               |             |
-| Product Details Page     |    H     |     3 hrs      |               |             |
-| Product Details Page     |    H     |     3 hrs      |               |             |
-| Product Details Page     |    H     |     3 hrs      |               |             |
-| CSS                      |    H     |     10 hrs     |               |             |
-| Media Queries            |    H     |     2 hrs      |               |             |
+| Task                     | Priority | Estimated Time | Time Invested |
+| ------------------------ | :------: | :------------: | :-----------: | 
+| Add Contact Form         |    L     |     3 hrs      |       2        |
+| Create CRUD Actions      |    H     |     3 hrs      |        2       |           
+| Endpoints                |    H     |     3 hrs      |        3       |             
+| Auth                     |    H     |     3 hrs      |        2       |             
+| Seed DB                  |    H     |     2 hrs      |        1       |             
+| File structure           |    H     |     1 hrs      |        1       |             
+| Set up auth on front end |    H     |     3 hrs      |        2       |             
+| Homepage                 |    H     |     2 hrs      |        2       |             
+| Products Page            |    H     |     3 hrs      |        3       |             
+| Product Details Page     |    H     |     3 hrs      |2  |                              
+| Product Create Page      |    H     |     2 hrs      |     2     |             
+| Product Details Page     |    H     |     3 hrs      |    3 |                        
+| CSS                      |    H     |     10 hrs     |        12       |             
+| Media Queries            |    H     |     2 hrs      |        3       |             
 
-| TOTAL | | 52 hrs | | |
+| TOTAL | | 52 hrs | 40 | 
 
 ### Server (Back End)
 

@@ -23,7 +23,7 @@ const Products = ({products, currentUser}) => {
             <br/>
             <span>${product.price}</span>
           </Link>
-         </div>
+        </div>
       ))}
         </div>
     </div>
