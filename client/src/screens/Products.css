@@ -48,3 +48,15 @@ font-family: 'Bebas Neue';
 .productLink {
   color: black;
 }
+
+@media only screen and (max-width: 550px) {
+  .product {
+    height: 200px;
+    width: 125px;
+  }
+
+  .productImg {
+    height: 125px;
+    width: 100px;
+  }
+}
