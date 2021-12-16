@@ -37,6 +37,12 @@ font-family: 'Bebas Neue';
 
 .addButton {
   margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  font-size: 16px;
 }
 
 .productLink {
