@@ -17,9 +17,11 @@ const Products = ({products, currentUser}) => {
       {products.map((product) => (
         <div className="product">
           <Link to={`products/${product.id}`} className="productLink">
-            <img src={product.img_url} alt="product" className="productImg"/>
-            <h4>{product.name}</h4>
-            <h4>${product.price}</h4>
+            <img src={product.img_url} alt="product" className="productImg" />
+            <br/>
+            <span>{product.name}</span>
+            <br/>
+            <span>${product.price}</span>
           </Link>
          </div>
       ))}

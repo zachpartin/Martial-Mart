@@ -21,11 +21,14 @@ font-family: 'Bebas Neue';
   font-size: 20px;
   width: 250px;
   height: 350px;
+  margin: 10px;
 }
 
 .productImg {
   height: 225px;
   width: 200px;
+  border: solid;
+  border-color: lightgray;
 }
 
 .forSale {
