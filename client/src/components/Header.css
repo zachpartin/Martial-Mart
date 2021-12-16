@@ -39,6 +39,21 @@ text-decoration: none;
 @media only screen and (max-width: 450px) {
   .nav {
     flex-direction: column;
+    top: 5px;
+    right: 0px;
+  }
+
+  .headerLinks {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .nav {
     top: 0px;
   }
 }
